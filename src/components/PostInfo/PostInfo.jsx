@@ -1,5 +1,7 @@
-import { UserInfo } from "../UserInfo/UserInfo";
-import { CommentList } from "../CommentList/CommentList";
+import { UserInfo } from '../UserInfo/UserInfo';
+import { CommentList } from '../CommentList/CommentList';
+
+import './PostInfo.scss';
 
 export const PostInfo = ({ post }) => {
   return (
@@ -13,5 +15,3 @@ export const PostInfo = ({ post }) => {
     </article>
   );
 };
-
-import './PostInfo.scss';

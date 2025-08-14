@@ -11,11 +11,10 @@ function getUserById(userId) {
 
 function getCommentsById(postId) {
   return commentsFromServer
-    .filter(comment => comment.postId === postId && comment.userId)
+    .filter(comment => comment.postId === postId)
     .map(comment => ({
       ...comment,
       user: getUserById(comment.userId),
-      comment: getUserById(comment.commentId),
     }));
 }
 
