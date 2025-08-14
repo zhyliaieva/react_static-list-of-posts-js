@@ -4,7 +4,9 @@ import { PostInfo } from '../PostInfo/PostInfo';
 export const PostList = ({ posts }) => (
   <div className="PostList">
     {posts.map(post => (
-      <PostInfo post={post} />
+      <div className="PostInfo__header" key={post.id}>
+        <PostInfo post={post} />
+      </div>
     ))}
   </div>
 );
